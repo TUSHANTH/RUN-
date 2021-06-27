@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>RUN!</title>
+        <link rel="stylesheet" href="RUN.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+        <script src="RUN.js"></script>
+        <audio id="jumpsound">
+            <source src="JUMP_SOUND.mp3" type="audio/mp3">
+        </audio>
+        <audio id="button">
+            <source src="runn.mp3" type="audio/mp3">
+        </audio>
+        <audio id="pregame">
+            <source src="game.mp3" type="audio/mp3">
+        </audio>
+        <audio id="lost">
+            <source src="lost.wav" type="audio/mp3">
+        </audio>
+    </head>
+    <body>
+        <div id="background_1">
+            <form class="message">
+                <label class="won">Better Luck Next Time</label><br>
+                <label class="score">SCORE:<span id="score1" style="background-color: transparent;"></span></label><br>
+                <label class="name">Enter Your Name</label><br>
+                <input type="text"id="txt" name="txt" required autocomplete="off"><br>
+                <button id="stop" onclick="part1(document.getElementById('txt').value)">Save & Play Again</button>
+            </form>
+        </div>
+        <label id="Title" onload="pre()">RUN!</label>
+        <label id="s">SCORE:<span id="score2" style="background-color: transparent;"></span></label>
+        <section class="play">
+            <div id="ceiling">
+                <div id="Hole1"></div>
+            </div>
+            <div id="playarea">
+                <div id="cube"></div>
+            </div>
+            <div  id="floor">
+                <div id="Hole2"></div>
+            </div>
+        </section>
+        <label id="info">PRESS SPACE TO MOVE UP AND DOWN</label><br>
+        <label id="info1">!BEWARE OF THE HOLES!</label><br>
+        <button id="start" onclick="move()">PLAY</button>
+        <label class="hs" id="hsd">HighestScore:</label><br>
+        <label class="hs" id="highscore1"></label>
+    </body>
+</html>

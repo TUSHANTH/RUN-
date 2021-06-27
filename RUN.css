@@ -1,0 +1,233 @@
+body{
+    animation: backgroundpic 30s infinite;
+    background-size:cover;
+    margin:0%;
+}
+@keyframes backgroundpic{
+    0% { background-image: url("https://media3.giphy.com/media/BHNfhgU63qrks/giphy.gif"); }
+    50% { background-image: url("https://i.pinimg.com/originals/3d/08/e0/3d08e03cb40252526fee2036a67f07f1.gif"); }
+    100% { background-image: url("https://i.pinimg.com/originals/8b/7f/bc/8b7fbc2e623720393ad7ffa7e4896eac.gif"); }
+}
+.play{
+    height:50%;
+    margin-top: 5%;
+}
+#ceiling{
+    animation: backgroundimg 30s infinite;
+    background-size:cover;
+    height: 30%;
+    width: 100%;  
+}
+@keyframes backgroundimg{
+    0% { background-image: url("https://i.pinimg.com/originals/0f/7b/2a/0f7b2aeaa083ebc49a27f0f02b66fb87.gif"); }
+    50% { background-image: url("https://cdn.statically.io/img/i.pinimg.com/originals/2f/e1/21/2fe121fc21b3a0499d0d9ebb84aa5d8e.gif"); }
+    100% { background-image: url("https://i.pinimg.com/originals/9d/13/d0/9d13d0d6ae216bf4596086dc43b9afa1.gif"); }
+}
+#playarea{
+    background-color: rgb(50, 50, 50);
+    height: 40%;
+    width: 100%;
+}
+#cube{
+    background-color: tomato;
+    height: 80px;
+    width: 80px;; 
+    background-size: cover;
+    position: relative;
+    left: 10%;
+    top: 38%;
+}
+.JU{
+    animation: JU1 0.2S linear forwards;
+}
+.JD{
+    animation: JD1 0.2S linear forwards;
+}
+@keyframes JU1{
+    0%{
+        top: 38%;
+    }
+    50%{
+        top: 19%;
+    }
+    100%{
+        top:0%;
+    }
+}
+@keyframes JD1{
+    0%{
+        top: 0%;
+    }
+    50%{
+        top:19%;
+    }
+    100%{
+        top:38%;
+    }
+}
+#floor{
+    animation: backgroundimg 30s infinite;
+    background-size:cover;
+    height: 30%;
+    width: 100%;
+}
+#Hole1{
+    display: none;
+    background-color: rgb(50, 50, 50);
+    height:100%;
+}
+#Hole2{
+    display: none;
+    background-color: rgb(50, 50, 50);
+    height:100%;
+}
+.hole1{
+    animation: hole 1.2s linear infinite forwards;
+}
+@keyframes hole{
+    0%{
+        margin-left: 100%;
+        width: 0%;
+    }
+    10%{
+        margin-left: 90%;
+        width: 10%;
+    }
+    50%{
+        margin-left: 45%;
+    }
+    90%{
+        margin-left:0%; 
+        width: 10%;
+    }
+    100%{
+        margin-left:0%;
+        width: 0%;
+    }
+}
+#start{
+    background-color: rgb(255, 251, 0);
+    height:10%;
+    width: 10%;
+    font-family: 'Ultra', serif;
+    margin-top: 1%;
+    margin-left: 43%;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+#Title{
+    font-family: 'Ultra', serif;
+    margin-left: 44%;
+    font-size:50px;
+    animation: color-change 2s infinite;
+}
+@keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: rgb(9, 255, 0); }
+}
+button:hover {
+    animation-name: background-color;
+    animation-duration: 1s;
+    }
+
+    @keyframes background-color {
+        0% { background-color: red; }
+        100% { background-color: rgb(9, 255, 0); }
+}
+#info{
+    font-family: 'Ultra', serif;
+    margin-left: 32%;
+    font-size:20px;
+    animation: information 2s infinite;
+}
+#info1{
+    font-family: 'Ultra', serif;
+    margin-left: 38%;
+    font-size:20px;
+    animation: information 2s infinite;
+}
+@keyframes information {
+    0% { color: red; }
+    100% { color: rgb(9, 255, 0); }
+}
+@keyframes losing {
+    0%{ color: cornsilk;}
+    100%{ color: black;}
+}
+#stop{
+    background-color: rgb(255, 251, 0);
+    font-family: 'Ultra', serif;
+    margin-left: 0%; width: 70%; height:20%; margin-top: 1%;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+    font-size: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+#background_1{
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9;
+    display:none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .message{
+    background-image: url("https://preview.redd.it/0bb6dqsiab451.gif?s=b0c65596a54a30708da26669da6e79abf3be1680");
+    background-size: cover;
+    position: absolute;
+    margin-left: 31.5%;
+    margin-top: 19%;
+    padding: 15px;
+    font-size: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 30%;
+    height: 25%;
+  }
+  .won{
+    font:bold;
+    color: cornsilk;
+    background-color:transparent;
+    font-size:30px;
+    animation: losing 2s infinite;
+  }
+  .score{
+    font:italic;
+    color: wheat;
+    background-color:transparent;
+    font-size:30px;
+    color: rgb(255, 255, 255);
+    animation: losing 2s infinite;
+  }
+  .name{
+    font:bold;
+    color: white;
+    background-color:transparent;
+    font-size: 20px;
+    animation: losing 2s infinite;
+  }
+  input[type="text"]{
+    background-color: rgb(255, 255, 255);
+    width:40%;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+#s{
+    font:italic;
+    background-color:transparent;
+    font-family: 'Ultra', serif;
+    animation: information 2s infinite;
+    font-size:30px;
+    color: rgb(255, 255, 255);
+    margin-left: 20%;
+}
+.hs{
+    display:none;
+    font-family: 'Ultra', serif;
+    animation: information 2s infinite;
+    color: #000000;
+    margin-left: 43%;
+    font-size: 20px;
+}
